@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chore Door!</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link href="./style.css" rel="stylesheet" >
+
+
+  </head>
+
+  <body>
+    <div class="border-top">
+      <div class="container">
+        <div class="row">
+          <img class="mx-auto" src="images/logo.svg" alt="">
+        </div>
+      </div>
+
+    </div>
+    <!--INSTRUCTION-->
+    <div class="instruction">
+      <div class="container">
+        <div class="row">
+          <!--Title-->
+          <div class="instruct-title mx-auto mt-2">
+            <img src="images/star.svg" alt="">
+            <h2>Instruction</h2>
+            <img src="images/star.svg" alt="">
+          </div>
+
+        </div>
+        <!--Instruct Content-->
+        <div class="content mt-2">
+          <div class="row justify-content-center">
+            <div class="col-1">
+              <p>1</p>
+            </div>
+            <div class="col-6">
+              <p>Hiding behind one of these doors is the ChoreBot.</p>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-1">
+              <p>2</p>
+            </div>
+            <div class="col-6">
+              <p>Your mission is to open all of the doors without running into the ChoreBot</p>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-1">
+              <p >3</p>
+            </div>
+            <div class="col-6">
+              <p>If you manage to avoid the ChoreBot until the very last door, you win!</p>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-1">
+              <p >4</p>
+            </div>
+            <div class="col-6">
+              <p>See if you can score a winning streak!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="game">
+      <div class="container">
+        <div class="row justify-content-center">
+          <table class="game-board">
+            <tbody class="game-grid">
+                <tr class="game-grid-row">
+                    <div>
+                      <td class="game-door">
+                        <img class="reset-door" src="images/space.svg">
+                      </td>
+                    </div>
+
+                    <td class="game-door">
+                      <img class="reset-door"  src="images/beach.svg">
+                    </td>
+                    <td class="game-door">
+                      <img class="reset-door"  src="images/robot.svg">
+                    </td>
+                </tr>
+              </tbody>
+          </table>
+        </div>
+      </div>
+
+          <div class="play">
+            <div class="row justify-content-center">
+              <button id="restart-btn" >Good luck!</button>
+            </div>
+          </div>
+        </div>
+      <div class="streak">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="current-streak col-4">
+              <p>Current Streak</p>
+              <div class="streak mx-auto" id="curr">
+                <p>0</p></div>
+            </div>
+            <div class="best-steak col-4">
+              <p>Best Streak</p>
+              <div class="streak mx-auto" id="best">0</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
